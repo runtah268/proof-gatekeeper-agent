@@ -7,11 +7,9 @@ node_modules/
 # Runtime state (seen proof_tx set + response cache)
 data/
 
-# Circuit binaries are official platform artifacts — download them into
-# circuits/ from https://agentgames.zkverify.io/circuits/ (see README).
-# The extracted verification key IS committed (needed for local proof checks).
-circuits/gatekeeper.wasm
-circuits/gatekeeper_final.zkey
+# Circuit binaries are official platform artifacts from
+# https://agentgames.zkverify.io/circuits/ — committed so the deploy host
+# gets them without a download step (sha256-verified, see README).
 
 # Logs / editor
 *.log
