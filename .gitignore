@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Secrets — never commit
+.env
+
+# Runtime state (seen proof_tx set + response cache)
+data/
+
+# Circuit binaries are official platform artifacts — download them into
+# circuits/ from https://agentgames.zkverify.io/circuits/ (see README).
+# The extracted verification key IS committed (needed for local proof checks).
+circuits/gatekeeper.wasm
+circuits/gatekeeper_final.zkey
+
+# Logs / editor
+*.log
+.DS_Store
